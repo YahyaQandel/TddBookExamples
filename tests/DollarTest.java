@@ -10,6 +10,12 @@ public class DollarTest {
     public void setUp() throws Exception {
     }
 
+    @Test
+    public void testMultiplication(){
+        Dollar five = new Dollar(5);
+        five.times(2);
+        assertEquals(10,five.amount());
+    }
     @After
     public void tearDown() throws Exception {
     }
